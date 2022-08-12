@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn flask_sentiment_analysis_app:flask_sentiment_analysis_app
