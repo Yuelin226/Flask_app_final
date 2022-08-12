@@ -1,0 +1,25 @@
+{% extends 'index_upload_and_show_data.html' %}
+
+{% block content %}
+{%  for message in 
+get_flashed_messages() %}
+    <div class="alert alert-warning
+    alert-dismissible fade show" role="
+    alert">
+    {{ message }}
+    <button type="button" class ="
+    btn-close" data-bs-dismiss="alert"
+    aria-label="Close"></button>
+    </div>
+
+{% endfor %}
+
+{% if name %}
+    <h1> Please input your name. </h1>
+    <br/>
+    <img src="{{ url_for('statics', filename='images/NorthPeak.png')}}"   
+
+
+{% else %}
+    <h1> User List:</h1>
+{%  endblock  %}
