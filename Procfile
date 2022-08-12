@@ -1,1 +1,1 @@
-web: gunicorn flask_sentiment_analysis_app:app
+web: gunicorn flask_sentiment_analysis_app:app --preload
